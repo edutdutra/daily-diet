@@ -2,10 +2,12 @@ import {StatusBar} from "react-native";
 import {ThemeProvider} from "styled-components/native";
 import {useFonts, NunitoSans_400Regular, NunitoSans_700Bold} from "@expo-google-fonts/nunito-sans";
 
-import {Home} from "./src/screens/Home";
 import {Loading} from "./src/components/Loading";
 
 import theme from './src/theme';
+
+import {Home} from "./src/screens/Home";
+import {Statistics} from "./src/screens/Statistics";
 
 
 export default function App() {
@@ -18,7 +20,7 @@ export default function App() {
                 backgroundColor="transparent"
                 translucent
             />
-            {fontsLoaded ? <Home/> : <Loading/>}
+            {fontsLoaded ? <Statistics/> : <Loading/>}
         </ThemeProvider>
     );
 }

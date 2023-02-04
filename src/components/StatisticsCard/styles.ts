@@ -1,4 +1,4 @@
-import styled, {css} from 'styled-components/native';
+import styled from 'styled-components/native';
 import {TouchableOpacity} from "react-native";
 import {ArrowUpRight} from "phosphor-react-native";
 
@@ -20,21 +20,6 @@ export const Container = styled(TouchableOpacity)`
   position: relative;
 `;
 
-export const Title = styled.Text`
-  ${({theme}) => css`
-    font-size: ${theme.FONT_SIZE.SM}px;
-    font-family: ${theme.FONT_FAMILY.REGULAR};
-    color: ${theme.COLORS.GRAY_2};
-  `};
-`;
-
-export const Percentage = styled.Text`
-  ${({theme}) => css`
-    font-size: ${theme.FONT_SIZE.XXL}px;
-    font-family: ${theme.FONT_FAMILY.BOLD};
-    color: ${theme.COLORS.GRAY_1};
-  `};
-`;
 
 export const Icon = styled(ArrowUpRight).attrs(({theme}) => ({
     size: 24,

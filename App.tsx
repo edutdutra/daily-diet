@@ -20,7 +20,7 @@ export default function App() {
                 backgroundColor="transparent"
                 translucent
             />
-            {fontsLoaded ? <Statistics/> : <Loading/>}
+            {fontsLoaded ? <Home/> : <Loading/>}
         </ThemeProvider>
     );
 }

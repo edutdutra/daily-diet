@@ -22,7 +22,6 @@ export function Home() {
     return (
         <Container>
             <Header/>
-            //ToDo - Refatorar Statistics Card para utilizar o componente StatisticsPercentage
             <StatisticsCard/>
 
             <Title>Refeições</Title>

@@ -1,13 +1,11 @@
-import {Container, Icon, Percentage, Title} from "./styles";
+import {Container, Icon} from "./styles";
+import {StatisticsPercentage} from "../StatisticsPercentage";
 
 export function StatisticsCard() {
-    const percentage = 90.86
-
     return (
         <Container>
             <Icon/>
-            <Percentage>{percentage.toString().replace('.', ',')}%</Percentage>
-            <Title>das refeições dentro da dieta</Title>
+            <StatisticsPercentage />
         </Container>
     )
 }

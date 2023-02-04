@@ -8,6 +8,7 @@ import theme from './src/theme';
 
 import {Home} from "./src/screens/Home";
 import {Statistics} from "./src/screens/Statistics";
+import {Meal} from "./src/screens/Meal";
 
 
 export default function App() {
@@ -20,7 +21,7 @@ export default function App() {
                 backgroundColor="transparent"
                 translucent
             />
-            {fontsLoaded ? <Home/> : <Loading/>}
+            {fontsLoaded ? <Meal/> : <Loading/>}
         </ThemeProvider>
     );
 }

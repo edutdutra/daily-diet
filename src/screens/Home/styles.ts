@@ -14,7 +14,6 @@ export const Title = styled.Text`
     font-family: ${theme.FONT_FAMILY.REGULAR};
     color: ${theme.COLORS.GRAY_1};
   `};
-  margin-bottom: 8px;
 `
 
 export const Section = styled.Text`

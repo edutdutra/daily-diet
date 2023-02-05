@@ -6,11 +6,7 @@ import {Loading} from "./src/components/Loading";
 
 import theme from './src/theme';
 
-import {Home} from "./src/screens/Home";
-import {Statistics} from "./src/screens/Statistics";
-import {NewMeal} from "./src/screens/NewMeal";
-import {Feedback} from "./src/screens/Feedback";
-import {Meal} from "./src/screens/Meal";
+import {Routes} from "./src/routes";
 
 
 export default function App() {
@@ -23,7 +19,7 @@ export default function App() {
                 backgroundColor="transparent"
                 translucent
             />
-            {fontsLoaded ? <NewMeal/> : <Loading/>}
+            {fontsLoaded ? <Routes/> : <Loading/>}
         </ThemeProvider>
     );
 }

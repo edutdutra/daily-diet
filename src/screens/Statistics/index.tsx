@@ -2,19 +2,19 @@ import {
     Container,
     DataNumber, DataText,
     GeneralStatisticsContainer,
-    Icon,
     InfosContainer,
     LargerCard,
     SmallCard,
     Title
 } from "./styles";
 import {StatisticsPercentage} from "../../components/StatisticsPercentage";
+import {BackButton} from "../../components/BackButton";
 
 
 export function Statistics() {
     return (
         <Container>
-            <Icon/>
+            <BackButton type="PRIMARY"/>
             <StatisticsPercentage/>
 
             <GeneralStatisticsContainer>

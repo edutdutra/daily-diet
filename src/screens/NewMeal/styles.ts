@@ -10,6 +10,7 @@ export const Container = styled(SafeAreaView)`
   flex: 1;
   background-color: ${({theme}) => theme.COLORS.GRAY_5};
   padding-top: 24px;
+  position: relative;
 `
 
 export const Title = styled.Text`

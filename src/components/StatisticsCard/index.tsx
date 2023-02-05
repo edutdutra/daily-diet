@@ -1,9 +1,12 @@
-import {Container, Icon} from "./styles";
+import {TouchableOpacityProps} from "react-native";
+
 import {StatisticsPercentage} from "../StatisticsPercentage";
 
-export function StatisticsCard() {
+import {Container, Icon} from "./styles";
+
+export function StatisticsCard({...rest}: TouchableOpacityProps) {
     return (
-        <Container>
+        <Container {...rest}>
             <Icon/>
             <StatisticsPercentage />
         </Container>

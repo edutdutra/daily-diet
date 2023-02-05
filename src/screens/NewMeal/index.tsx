@@ -12,10 +12,12 @@ import {
 } from "./styles";
 import {Input} from "../../components/Input";
 import {Button} from "../../components/Button";
+import {BackButton} from "../../components/BackButton";
 
 export function NewMeal() {
     return (
         <Container>
+            <BackButton />
             <Title>Nova refeição</Title>
 
             <FormContainer>

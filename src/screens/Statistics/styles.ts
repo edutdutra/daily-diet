@@ -11,15 +11,8 @@ type Props = {
 export const Container = styled(SafeAreaView)`
   flex: 1;
   background-color: ${({theme}) => theme.COLORS.GREEN_LIGHT};
-`
-
-export const Icon = styled(ArrowLeft).attrs(({theme}) => ({
-    size: 24,
-    color: theme.COLORS.GREEN_DARK,
-}))`
-  position: absolute;
-  left: 24px;
-  top: 45px;
+  
+  position: relative;
 `
 
 export const GeneralStatisticsContainer = styled.View`
